@@ -104,33 +104,48 @@ namespace Tarea1Progra
             // 
             // CboTipoConversor
             // 
+            this.CboTipoConversor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CboTipoConversor.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboTipoConversor.FormattingEnabled = true;
-            this.CboTipoConversor.Location = new System.Drawing.Point(128, 45);
+            this.CboTipoConversor.Items.AddRange(new object[] {
+            "Moneda",
+            "Masa",
+            "Volumen",
+            "Longitud",
+            "Almacenamiento",
+            "Tiempo"});
+            this.CboTipoConversor.Location = new System.Drawing.Point(129, 45);
             this.CboTipoConversor.Name = "CboTipoConversor";
-            this.CboTipoConversor.Size = new System.Drawing.Size(190, 21);
+            this.CboTipoConversor.Size = new System.Drawing.Size(190, 27);
             this.CboTipoConversor.TabIndex = 6;
+            this.CboTipoConversor.TextChanged += new System.EventHandler(this.CboTipoConversor_TextChanged);
             // 
             // CboDeConversor
             // 
+            this.CboDeConversor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CboDeConversor.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboDeConversor.FormattingEnabled = true;
             this.CboDeConversor.Location = new System.Drawing.Point(128, 111);
             this.CboDeConversor.Name = "CboDeConversor";
-            this.CboDeConversor.Size = new System.Drawing.Size(190, 21);
+            this.CboDeConversor.Size = new System.Drawing.Size(190, 27);
             this.CboDeConversor.TabIndex = 7;
             // 
             // CboAconversor
             // 
+            this.CboAconversor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CboAconversor.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboAconversor.FormattingEnabled = true;
             this.CboAconversor.Location = new System.Drawing.Point(128, 168);
             this.CboAconversor.Name = "CboAconversor";
-            this.CboAconversor.Size = new System.Drawing.Size(190, 21);
+            this.CboAconversor.Size = new System.Drawing.Size(190, 27);
             this.CboAconversor.TabIndex = 8;
             // 
             // txtCantidadConversor
             // 
+            this.txtCantidadConversor.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantidadConversor.Location = new System.Drawing.Point(168, 222);
             this.txtCantidadConversor.Name = "txtCantidadConversor";
-            this.txtCantidadConversor.Size = new System.Drawing.Size(162, 20);
+            this.txtCantidadConversor.Size = new System.Drawing.Size(162, 26);
             this.txtCantidadConversor.TabIndex = 9;
             // 
             // Form1
@@ -150,7 +165,6 @@ namespace Tarea1Progra
             this.Controls.Add(this.lblTipoConversor);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
