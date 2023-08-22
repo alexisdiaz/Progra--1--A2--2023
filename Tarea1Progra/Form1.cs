@@ -12,8 +12,16 @@ namespace Tarea1Progra
 {
     public partial class Form1 : Form
     {
-
+        String[][] TiposConversores = new string[][]
+        {
+        new string [] {"Dolar", }//Monedas
+        };
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConvertir_Click(object sender, EventArgs e)
         {
 
         }

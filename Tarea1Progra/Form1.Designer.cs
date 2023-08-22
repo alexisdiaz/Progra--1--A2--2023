@@ -100,6 +100,7 @@ namespace Tarea1Progra
             this.btnConvertir.TabIndex = 5;
             this.btnConvertir.Text = "Convertir";
             this.btnConvertir.UseVisualStyleBackColor = true;
+            this.btnConvertir.Click += new System.EventHandler(this.btnConvertir_Click);
             // 
             // CboTipoConversor
             // 
